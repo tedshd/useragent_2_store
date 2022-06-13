@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>useragent 2 store</title>
+  <script src="ua2store.js"></script>
+</head>
+<body>
+<button>Click to store</button>
+</body>
+<script>
+  document.querySelector('button').addEventListener('click', function () {
+    ua2Store({
+      ua: window.navigator.userAgent,
+      xiaomi: 'https://app.mi.com/details?id=com.miHoYo.ys.mi',
+      huawei: 'https://appgallery.huawei.com/app/C100914881',
+      vivo: 'https://h5coml.vivo.com.cn/h5coml/appdetail_h5/browser_v2/index.html?appId=2353924&resource=301&source=7',
+      url: 'https://livein.cool'
+    })
+  })
+</script>
+</html>
